@@ -6,13 +6,14 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 20px;
 }
+
 
 .container {
     background-color: #fff;
@@ -25,7 +26,9 @@ body {
 }
 
 header h1 {
-    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    color: #229954;
     margin-bottom: 20px;
 }
 
@@ -42,6 +45,12 @@ header h1 {
     height: 150px;
     object-fit: cover;
     margin-bottom: 15px;
+    box-shadow: 0 0 15px rgba(34, 153, 84, 0.6);
+    transition: box-shadow 0.3s ease;
+}
+
+.photo img:hover {
+    box-shadow: 0 0 30px rgba(34, 153, 84, 1);
 }
 
 .bio h2 {
@@ -55,6 +64,20 @@ header h1 {
     color: #555;
     line-height: 1.5;
 }
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
 
 .links {
     display: flex;
@@ -63,13 +86,19 @@ header h1 {
 }
 
 .link-btn {
-    background-color: #229954; /* new green color */
+    background-color: #229954;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.2s, background-color 0.3s;
 }
-
 
 .link-btn:hover {
     background-color: #0b5345;
+    transform: scale(1.1);
 }
+
 
 /* Responsive Design */
 @media (max-width: 500px) {
